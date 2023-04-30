@@ -1,146 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 
-    <link rel="stylesheet" href="/css/index.css">
-    <link rel="stylesheet" href="/css/indexphone.css">
+    <link rel="stylesheet" href="./styles/normilize.css">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/media.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 
-    <title>Верстка 1</title>
 </head>
+
 <body>
-    <header>
-    <div class="header" id="header">
-        <div class="header__mobile__version">
-            <div class="search">
-                <input type="text" id="searchInput" placeholder="Search">
-              </form>
-              <ul id="resultsList">
-              </ul>
-            </div>
-            <div class="sidebar">
-                <img class="sidebar__img"src="img/nav__vectors/Frame (3).png" alt="">
-            </div>
-            <div class="cart">
-                <img class="header__cart" src="img/nav__vectors/Frame (4).png" alt="" srcset="">
-            </div>
-        </div>
-
-        <div class="menu">
-
-            <div class="menu__logo">
-                <div class="menu__logo__vector">
-                    <a href="#header"><img class="menu__logo__vector_1" src="img/Logo__layers/Vector.png" alt="">
-                    <img class="menu__logo__vector_2" src="img/Logo__layers/Vector-1.png" alt="">
-                    <img class="menu__logo__vector_3" src="img/Logo__layers/Vector-2.png" alt=""></a>
-                </div>
-                <div class="menu__navigation">
-                    <nav class="menu__nav__MainPage"><a href="/index.html">MAIN PAGE</a></nav>
-                    <nav class="menu__nav__Catalog"><a href="/index.html">CATALOG</a></nav>
-                    <nav class="menu__nav__Blog"><a href="/index.html">BLOG <div class="menu__nav_Blog__line"></a></div></nav>
-                    <nav class="menu__nav__Favorites"><a href="/index.html">FAVORITES</a></nav>
-                    <div class="menu__nav__Language">
-                        <select class="menu__navigation__language__selector">
-                            <option value="option1">English</option>
-                            <option value="option2">Ukraine</option>
-                        </select>
+      <div>
+        <header class="header-line">
+            <div class="wrap">
+                <div class="wrap header__wrap">
+                    <div class="content"></div>
+                    <div class="header__menu">
+                        <span></span>
                     </div>
-                    <nav class="menu__nav__Profile">
-                        <a href="/profile.html"><img src="/img/nav__vectors/Vector (1).png" alt=""></a>
-                    </nav>
-                    <nav class="menu__nav__Like">
-                        <a href="/likes.html"><img src="/img/nav__vectors/Vector (2).png" alt=""></a>
-                    </nav>
-                    <nav class="menu__nav__Cart">
-                        <a href="/cart.html"><img src="/img/nav__vectors/Frame.png" alt=""></a>
-                    </nav>
+                    <div class="search">
+                        <div class="search__img">
+                            <img src="./assets/img/Search.svg" alt="">
+                        </div>
+                        <div class="search__input">
+                            <input type="text" id="searchInput" placeholder="Search">
+                        </div>
+                    </div>
+                    <div class="cart">
+                        <a class="mobile-link" href="@"><img src="./assets/img/WhiteCart.svg" alt=""></a>
+                    </div>
+                    <div class="header-line__logo">
+                        <img src="./assets/img/logo.png" alt="" srcset="">
+                    </div>
+        
+                    <div class="header__nav">
+                        <a class="nav__item" href="@">MAIN PAGE</a>
+                        <a class="nav__item" href="@">CATALOG</a>
+                        <a class="nav__item border" href="@">BLOG</a>
+                        <a class="nav__item" href="@">FAVORITES</a>
+                    </div>
+                    <div class="navIcons">
+                        <select name="" id="">
+                            <option value="English">EN</option>
+                            <option value="Ukraine">UA</option>
+                        </select>
+                        <a class="nav-link" href="@"><img src="./assets/img/Liked.svg" alt=""></a>
+                        <a class="nav-link" href="@"><img src="./assets/img/Profile.svg" alt=""></a>
+                        <a class="nav-link" href="@"><img src="./assets/img/Cart.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        </div>
+        <div class="content">
+            <div class="articleMain">
+                <div class="wrap articleMain__wrap">
+                    <div class="articleMain__img">
+                        <img src="./assets/img/ArticleImg.jfif" alt="">
+                    </div>
+                    <div class="articleMain__text">
+                        <span>August 15. 2021</span>
+                        <h1>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h1>
+                        <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                            printer took a galley of type and scrambled it to make a type specimen book. It has survived not
+                            only five centuries, but also the leap into electronic typesetting, remaining essentially
+                            unchanged.</p>
+                        <div class="articleMain__button">
+                            <button> <a href="">Read</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap articleAssistan__wrap">
+                    <div class="pages">
+                        <h1>Home <img src="./assets/img/Arrow-right.svg" alt=""> Blog</h1>
+                    </div>
+                    <div class="articleAssistan__item">
+                        <div class="articleAssistan__img">
+                            <img src="./assets/img/ArticleImg.jfif" alt="">
+                        </div>
+                        <div class="articleAssistan__text">
+                            <span>August 15. 2021</span>
+                            <h2>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h2>
+                            <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                printer took a galley of type and scrambled it to make a type specimen book. It has survived
+                                not only five centuries, but also the leap into electronic typesetting, remaining
+                                essentially unchanged.</p>
+                        </div>
+                    </div>
+                    <div class="articleAssistan__item">
+                        <div class="articleAssistan__img">
+                            <img src="./assets/img/ArticleImg.jfif" alt="">
+                        </div>
+                        <div class="articleAssistan__text">
+                            <span>August 15. 2021</span>
+                            <h2>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h2>
+                            <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                printer took a galley of type and scrambled it to make a type specimen book. It has survived
+                                not only five centuries, but also the leap into electronic typesetting, remaining
+                                essentially unchanged.</p>
+                        </div>
+                    </div>
+                    <div class="articleAssistan__item">
+                        <div class="articleAssistan__img">
+                            <img src="./assets/img/ArticleImg.jfif" alt="">
+                        </div>
+                        <div class="articleAssistan__text">
+                            <span>August 15. 2021</span>
+                            <h2>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h2>
+                            <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                printer took a galley of type and scrambled it to make a type specimen book. It has survived
+                                not only five centuries, but also the leap into electronic typesetting, remaining
+                                essentially unchanged.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    </header>
-    <div class="container">
-        <div class="block__blog">
-            <div class="items__main">
-                <img class="item__main__img" src="/img/container/Image.png" alt="">
-                <p class="item__main__text_paragraph">August 15.2021</p>
-                <p class="item__main__text__maintext">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                <p class="item__main__text__maintexts">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-                <button class="item__main__button__read">Read</button>
-            </div>
-            <div class="items_assistans">
-                <div class="item__assistans__img__first">
-                    <img class="item__assistans__img__first__img" src="/img/container/Image (1).png" alt="">
-                    <p class="item__assistans__text__first_date">August 15.2021</p>
-                    <p class="item__assistans__text__first__textmain">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                    <p class="item__assistans__text__first__textassistans">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-                </div>
-                <div class="item__assistans__img__second">
-                    <img class="item__assistans__img__second__img" src="/img/container/Image (1).png" alt="">
-                    <p class="item__assistans__text__second_date">August 15.2021</p>
-                    <p class="item__assistans__text__second__textmain">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                    <p class="item__assistans__text__second__textassistans">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-                </div>
-                <div class="item__assistans__img__three">
-                    <img class="item__assistans__img__three__img" src="/img/container/Image (1).png" alt="">
-                    <p class="item__assistans__text__three_date">August 15.2021</p>
-                    <p class="item__assistans__text__three__textmain">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                    <p class="item__assistans__text__three__textassistans">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+        <footer class="footerMain">
+            <div class="wrap">
+                <div class="footerMain__logo">
+                    <img src="./assets/img/Group.svg" alt="" srcset="">
                 </div>
             </div>
-            
-        </div>
-    </div>
-    <footer>
-        <div class="footer">
-            <div class="footer__aboutUs">
-                <a>About us</a>
-            </div>
-            <p class="footer__lorem__text__1">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
-            <p class="footer__copyright__text">Copyright © 2021  mx-marketplace</p>
-            <div class="quick__links">
-                <p class="footer__quick__links">Quick Links</p>
-                <div class="footer__quick__links_pc">
-                    <nav class="footer__nav__links__Main">MAIN PAGE</nav>
-                    <nav class="footer__nav__links__Catalog">CATALOG</nav>
-                    <nav class="footer__nav__links__Blog">BLOG</nav>
-                    <nav class="footer__nav__links__Favorites">FAVORITES</nav>
+            <div class="wrap footerMain__wrap">
+                <div class="footer__column footerMain__item__aboutUs">
+                    <div class="footerMain__text__aboutUs">
+                        <h1>About Us</h1>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                            the industry's standard dummy text ever since the 1500s,</p>
+                        <p class="hidePhone">Copyright © 2021 mx-marketplace</p>
+                    </div>
                 </div>
-                <div class="footer__quick__links__mobile">
-                    <nav>Mountain Bike</nav>
-                    <nav>Mountain Bike</nav>
-                    <nav>Mountain Bike</nav>
-                    <nav>Mountain Bike</nav>
-                    <nav>Mountain Bike</nav>
-                    <nav>Mountain Bike</nav>
+                <div class="footerMain__doubleItem">
+                    <div class="footer__column footerMain__item__QuickLink">
+                        <div class="footerMain__text__QuickLink">
+                            <h1>Quick Links</h1>
+                            <a href="">Main Page</a>
+                            <a href="">Catalog</a>
+                            <a href="">Blog</a>
+                            <a href="">Favorites</a>
+                        </div>
+                    </div>
+                    <div class="footer__column footerMain__item__FollowUs">
+                        <h1>Follow Us</h1>
+                        <a href=""><img src="./assets/img/Facebook.svg" alt="" srcset="">Facebook</a> <br> <br>
+                        <a href=""><img src="./assets/img/Instagram.svg" alt="" srcset="">Instagram</a>
+                    </div>
+                </div>
+                <div class="footer__column footerMain__item__Subscribe">
+                    <div class="footer__text__Subscribe">
+                        <h1>Subscribe to our newsletter:</h1>
+                        <p>Get the best offers and the latest updates from mx-marketplace. We promise we won't spam you with
+                            dozens of useless e-mails.</p>
+                    </div>
+                    <div class="footer__input__Subscribe">
+                        <input type="email" id="email" name="email" placeholder="Add your E-mail">
+                        <a class="footer__input__button">Send</a>
+                    </div>
+                    <div class="footer__pay">
+                        <img class="footerIcon__pay" src="./assets/img/Visa.svg" alt="">
+                        <img class="footerIcon__pay" src="./assets/img/MSCard.svg" alt="">
+                        <img class="footerIcon__pay" src="./assets/img/Stripe.svg" alt="">
+                        <img class="footerIcon__pay" src="./assets/img/applePay.svg" alt="">
+                    </div>
                 </div>
             </div>
-            <div class="follow__us">
-                <p class="footer__Follow">Follow Us</p>
-                <img class="footer__img__first" src="img/footer/Frame (1).png" alt="">
-                <img class="footer__img__second" src="img/footer/Frame (2).png" alt="">
-                <nav class="footer__follow__text__first">Facebook</nav>
-                <nav class="footer__follow__text__second">Instagram</nav>
-            </div>
-            <div class="subscribe__to__our">
-                <p class="footer__subscribe__to">Subscribe to our newsletter:</p>
-                <p class="footer__subscribe__to__assistant">Get the best offers and the latest updates from mx-marketplace. We promise we won't spam you with dozens of useless e-mails.</p>
-                <div class="footer__input">
-                    <label for="email-input">Send your e-mail:</label>
-                    <input type="email" id="email-input" name="email" placeholder="Add your E-mail" required>
-                    <button type="submit" class="btn btn-primary">Send</button>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <script src="/js/index.js"></script>
-    <script src="/js/ShowHide.js"></script>
-    <script src="/js/search.js"></script>
+        </footer>
+    
+        <script src="./js/sidebar.js"></script>
+      </div>
 </body>
+
 </html>
